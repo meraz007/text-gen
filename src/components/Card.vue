@@ -1,22 +1,24 @@
 <template>
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-  <div class="px-6 py-4">
     
-    <div class="font-bold text-xl mb-2">
-      <header>
-      <slot name="header"></slot>
-    </header>
-    </div>
-    <p class="text-gray-700 text-base">
-      <main>
-    <slot></slot>
-  </main>
-    </p>
-  </div>
-  <div class="px-6 pt-4 pb-2">
-    <footer>
-    <slot name="footer"></slot>
-  </footer>
-  </div>
-</div>
+    <BaseCard>
+    <template #header>
+      <h1>A paragraph for the main content</h1>
+    </template>
+    <template #default>
+    <p>Here's some contact info</p>
+    <p>And another one.</p>
+  </template>
+    <template #footer>
+    <p>Here's some contact info</p>
+  </template>
+  </BaseCard>
 </template>
+
+<script>
+import BaseCard from '@/components/BaseCard.vue'
+export default {
+    components:{
+       BaseCard 
+    }
+}
+</script>
