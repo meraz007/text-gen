@@ -19,6 +19,28 @@ import BaseCard from '@/components/BaseCard.vue'
 export default {
     components:{
        BaseCard 
+    },
+    data(){
+      return{
+        lists:[
+        {
+          id:1,
+          title:'A paragraph for the main content',
+          description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+        },
+         {
+          id:2,
+          title:'A paragraph for the main content',
+          description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+        },
+         {
+          id:3,
+          title:'A paragraph for the main content',
+          description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+        }
+        ]
+      }
+      
     }
 }
 </script>
