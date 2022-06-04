@@ -1,6 +1,6 @@
 <template>
     <div class="grid grid-cols-3 gap-4">
-        <div class="bg-slate-200 p-6 h-96 drop-shadow-lg">
+        <div class="bg-slate-200 p-6 h-96 w-96 drop-shadow-lg">
             <label class="form-label inline-block mb-2 text-gray-700">
                 Context
             </label>
@@ -23,5 +23,5 @@
                     Your text here..
                 </p>
             </div>
-        </div>  
+    </div>  
 </template>

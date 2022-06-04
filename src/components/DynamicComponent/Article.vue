@@ -19,7 +19,7 @@
             </div>
               <p class="cursor-pointer" @click="isOpen = false">X</p>
           </div>
-            <component :is="activeTab" />
+            <component class="max-w-6xl" :is="activeTab" />
         </div>
       </div>
     </transition>
