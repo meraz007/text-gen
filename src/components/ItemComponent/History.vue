@@ -60,10 +60,14 @@
 </template>
 
 <script>
+import TextGen from '@/components/ItemComponent/TextGen.vue'
 export default {
+    components:{
+        TextGen
+    },
     data(){
         return{
-            
+            activeTab:''
         }
     },
     methods:{

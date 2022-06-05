@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Nav />
+    <!--<Nav />-->
     <div class="flex justify-center mt-36">
       <div class="w-7/12">
         <h1 class="text-5xl font-bold">A better, 10x faster way to write</h1>
@@ -14,11 +14,11 @@
 </template>
 
 <script>
-import Nav from '@/components/Nav.vue'
+//import Nav from '@/components/Nav.vue'
 export default {
   name: 'HomeView',
   components: {
-    Nav
+    //Nav
   }
 }
 </script>

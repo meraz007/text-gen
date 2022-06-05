@@ -1,16 +1,29 @@
 <template>
-    <div class="container mx-auto">
-    <div class="lg:gap-4 lg:flex">
-      <ButtonSimple class="bg-blue-500">Primary</ButtonSimple>
-      <ButtonSimple class="bg-red-700">Secondary</ButtonSimple>
-      <ButtonSimple class="bg-orange-600">Success</ButtonSimple>
-      <ButtonSimple class="bg-amber-800">Danger</ButtonSimplE>
-      <ButtonSimple class="bg-lime-700">Warning</ButtonSimple>
-      <ButtonSimple class="bg-green-800">Info</ButtonSimple>
-      <ButtonSimple class="bg-emerald-800">Light</ButtonSimple>
-      <ButtonSimple class="bg-sky-700">Dark</ButtonSimple>
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+  <div class="container flex mx-auto">
+    <a class="flex items-center">
+        <router-link to="/" class="self-center text-xl font-semibold whitespace-nowrap text-gray-500">Text-Gen</router-link>
+    </a>
+    <div class="flex justify-center w-full md:block " id="mobile-menu">
+      <ul class="flex flex-col justify-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+        <li>
+          <a class="block py-2 pr-4 pl-3 text-gray-700 cursor-pointer">Services</a>
+        </li>
+        <li>
+          <a class="block py-2 pr-4 pl-3 text-gray-700 cursor-pointer">Pricing</a>
+        </li>
+        <li>
+          <a class="block py-2 pr-4 pl-3 text-gray-700 cursor-pointer">Contact</a>
+        </li>
+      </ul>
     </div>
+    <div class="flex flex-row">
+      <router-link to="/Signin" class="block py-2 pr-4 pl-3 w-24 text-gray-700 cursor-pointer">Sign In</router-link>
+      <router-link to="/signup" class="block py-2 pr-4 pl-3 w-24 bg-black text-white rounded-md cursor-pointer">
+        Sign Up</router-link>
   </div>
+  </div>
+</nav>
 </template>
 
 <script>
