@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <!--<Nav />-->
     <div class="flex justify-center mt-36">
       <div class="w-7/12">
         <h1 class="text-5xl font-bold">A better, 10x faster way to write</h1>
@@ -10,15 +9,26 @@
         </div>
       </div>
   </div>
+  <div class="flex justify-center mt-20">
+    <h1 class="text-4xl font-bold text-gray-900">Client Feedback</h1>
+  </div>
+    <div class="flex gap-8 mt-12 justify-center">
+      <Card />
+      <Card />
+  </div>
+  <Footer class="mt-4"></Footer>
   </div>
 </template>
 
 <script>
-//import Nav from '@/components/Nav.vue'
+import Card from '@/components/Card.vue'
+import Footer from '@/components/Footer.vue'
+
 export default {
   name: 'HomeView',
   components: {
-    //Nav
+    Card,
+    Footer
   }
 }
 </script>
