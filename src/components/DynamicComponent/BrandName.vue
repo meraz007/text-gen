@@ -1,9 +1,9 @@
 <template>
-    <div class="grid grid-cols-4 gap-4 mt-5">
-        <router-link to="/Details"><Card /></router-link>
+    <div class="grid md:grid-cols-3 gap-4 mt-5">
         <Card />
         <Card />
-      
+        <Card />
+        <Card />
     </div>
     
 </template>
